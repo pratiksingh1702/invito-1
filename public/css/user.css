@@ -23,9 +23,7 @@ body {
     padding-bottom: 3rem;
 }
 
-img {
-    display: block;
-}
+
 
 .userContainer {
     max-width: 93.5rem;
@@ -67,16 +65,18 @@ img {
 
 .userProfile-image {
     float: left;
-    width: calc(33.333% - 1rem);
+    overflow: hidden;
+    max-width: 120px;
+    max-height: 100px;
+    
+
+    
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 3rem;
 }
 
-.userProfile-image img {
-    border-radius: 50%;
-}
 .stats{
     display: flex;
     justify-content: space-between;

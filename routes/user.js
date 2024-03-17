@@ -158,6 +158,7 @@ router.get("/:id/profile", isLoggedIn, async(req, res, next) => {
     let {id} = req.params;
     let posts = await Post.find({creater: id});
     let user = await User.findOne({_id: id});
+    console.log(posts[0])
     res.render("users/userPage.ejs", {user, posts});
 });
 
